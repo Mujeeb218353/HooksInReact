@@ -6,12 +6,11 @@ import UseMemo from "./components/UseMemo.jsx";
 import UseCallback from "./components/UseCallback.jsx";
 import UseReducer from "./components/UseReducer.jsx";
 import UseLayoutEffect from "./components/UseLayoutEffect.jsx";
-// import CustomHook from "./components/CustomHook.jsx";
-
+import CurrencyConverter from "./components/CurrencyConverter.jsx";
 
 export default function App() {
     return (
-        <>
+        <div className="py-5">
             <UseState/>
             <UseReducer/>
             <UseEffect/>
@@ -19,8 +18,8 @@ export default function App() {
             <UseMemo/>
             <UseCallback/>
             <UseLayoutEffect/>
-            {/* <CustomHook/> */}
+            <CurrencyConverter/>
             <PassGenerator/>
-        </>
+        </div>
     )
 }

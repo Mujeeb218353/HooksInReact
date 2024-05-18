@@ -26,7 +26,7 @@ function PassGenerator() {
   }, [password]);
   return (
     <>
-      <div className=" mx-10 shadow-md rounded-lg p-4 my-8 text-orange-500 bg-gray-800">
+      <div className=" mx-5 shadow-md rounded-lg p-4 my-8 text-orange-500 bg-gray-800">
         <h1 className="text-white text-center my-3 text-3xl font-serif">
           Password Generator
         </h1>
