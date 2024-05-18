@@ -20,7 +20,7 @@ const UseState = () => {
       </h1>
       <div className={"bg-blue-100 rounded p-5 flex flex-col"}>
         <input
-          className="mt-2 focus:outline-none"
+          className="mt-2 focus:outline-none p-2 rounded-sm"
           type="number"
           value={number}
           onChange={(e) => {
