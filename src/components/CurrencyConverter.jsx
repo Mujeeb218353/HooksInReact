@@ -3,8 +3,6 @@ import Input from "./Input.jsx";
 import useCurrencyInfo from "../hooks/useCurrencyInfo";
 
 const CurrencyConverter = () => {
-  const [to, setTo] = useState('To');
-  const [from, setFrom] = useState('From');
   const [fromCurrency, setFromCurrency] = useState('usd');
   const [toCurrency, setToCurrency] = useState('pkr');
   const fromCountryData = useCurrencyInfo(fromCurrency);
@@ -24,7 +22,7 @@ const CurrencyConverter = () => {
       <h1 className="text-center my-3 text-2xl font-serif">Custom Hooks</h1>
       <div className="rounded p-5 mx-auto">
         <Input 
-          from={from} 
+          from={'From'} 
           amount={fromAmount} 
           setAmount={setFromAmount}
           currency={fromCurrency}
@@ -34,8 +32,6 @@ const CurrencyConverter = () => {
         <div className="w-full text-center">
           <button 
             onClick={() => {
-              setFrom(to); 
-              setTo(from);
               setFromAmount(toAmount);
               setToAmount(fromAmount);
               setFromCurrency(toCurrency);
@@ -44,7 +40,7 @@ const CurrencyConverter = () => {
             className="btn btn-primary">Swap</button>
         </div>
         <Input 
-          to={to} 
+          to={'To'} 
           amount={toAmount} 
           setAmount={setToAmount}
           currency={toCurrency}

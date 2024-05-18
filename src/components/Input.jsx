@@ -31,7 +31,7 @@ const Input = (props) => {
         >
           {options.map((currencyCode, i) => (
             <option key={i} value={currencyCode}>
-              {currencyCode}
+              {currencyCode.toUpperCase()}
             </option>
           ))}
         </select>
