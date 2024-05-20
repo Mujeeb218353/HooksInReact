@@ -27,7 +27,8 @@ const CurrencyConverter = () => {
           setAmount={setFromAmount}
           currency={fromCurrency}
           setCurrency={setFromCurrency}
-          disabled={false}
+          disabledInput={false}
+          disabledSelect={false}
         />
         <div className="w-full text-center">
           <button 
@@ -45,7 +46,8 @@ const CurrencyConverter = () => {
           setAmount={setToAmount}
           currency={toCurrency}
           setCurrency={setToCurrency}
-          disabled={true}
+          disabledInput={true}
+          disabledSelect={true}
         />
       </div>
       <div className="w-full text-center">
