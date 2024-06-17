@@ -47,7 +47,7 @@ const CurrencyConverter = () => {
           currency={toCurrency}
           setCurrency={setToCurrency}
           disabledInput={true}
-          disabledSelect={true}
+          disabledSelect={false}
         />
       </div>
       <div className="w-full text-center">
